@@ -42,7 +42,7 @@ db_user_data = data_bag_item(node['zabbix']['server']['database']['databag'], 'u
 db_user = db_user_data.keys.first
 db_pass = db_user_data[db_user]['options']['password']
 
-package 'php5-pgsql'
+package 'php-pgsql'
 
 package 'zabbix-frontend-php' do
   response_file 'zabbix-frontend-without-apache.seed'
